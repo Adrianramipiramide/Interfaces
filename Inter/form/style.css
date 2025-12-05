@@ -1,0 +1,41 @@
+section {
+
+    background-color: hsl(287, 52%, 86%);
+    border: solid 3px hsl(216, 43%, 70%);
+    margin: 30vw;
+    width: 40vw;
+    position: fixed;
+
+}
+
+body {
+    margin: 0;
+    background-color: hsl(211, 30%, 90%);
+}
+button:hover{
+    background-color: aquamarine;
+}
+
+button {
+    background: none;
+    text-decoration: none;
+    font-family: serif;
+    padding: 1vh;
+    border-radius: 1vh;
+}
+
+input {
+    border-radius: 1vh;
+    font-family: serif;
+}
+
+form{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   gap: 1vh;
+   
+    padding: 5vh;
+    width: 30vw;
+}

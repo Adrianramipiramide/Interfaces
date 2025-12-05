@@ -1,0 +1,43 @@
+.containerTop{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+        left: 25vw;
+        top: 5vh;
+    
+    display: grid;
+    grid-template-columns: 4;
+    grid-template-rows: 5;
+    grid-auto-flow: column;
+
+    border: solid lightcoral 4px;
+    width: 50vw;
+    height: 90vh;
+      
+}
+
+.cuadrado1{
+    border:solid rgb(42, 30, 202);
+    
+    grid-row-start: 1;
+    grid-row-end: 5;
+    text-align: center;
+    
+}
+
+.cuadrado2 {
+    border: solid rgb(42, 199, 22);
+
+    grid-row-start: 1;
+    grid-row-end: 5;
+    text-align: center;
+
+}
+.cuadrado3 {
+    border: solid rgb(42, 199, 22);
+
+grid-row-start: 1;
+    grid-row-end:2;
+    text-align: center;
+
+}

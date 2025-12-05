@@ -1,0 +1,80 @@
+
+.circulo{
+    display: flex;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    background-color: aquamarine;
+    border: dotted blue 3px;
+    border-radius:  50% ;
+    animation:
+            slide-in 5s forwards,
+            slide-out 5s forwards,
+            slide-put 5s forwards 5s;
+}
+
+@keyframes slide-in {
+    from {
+            margin-left: 100%;
+            width: 20%;
+            .circulo {
+                background-color: aquamarine;
+            }
+
+        }
+
+    25%{
+        background-color: greenyellow;
+    
+    }
+    
+    50%{
+        background-color: yellow;
+      
+    }
+
+    75%{
+        background-color: red;
+      
+    }
+
+    to {
+            margin-left: 0%;
+            width: 10%;
+            background-color: rgb(30, 78, 210);
+  
+        }
+    
+}
+
+
+@keyframes slide-out{
+    from{
+        margin-left: 0%;
+            width: 10%;
+            background-color: rgb(30, 78, 210);
+    }
+
+    to{
+        margin-left: 0%;
+        margin-top: 50%;
+        width: 5%;
+      background-color: rgb(36, 210, 30);
+    }
+}
+
+@keyframes slide-put {
+    from {
+    margin-top: 50%;
+        width: 5%;
+        background-color: rgb(36, 210, 30);
+    }
+
+    to {
+        margin-top: 50%;
+        margin-left: 90%;
+        width: 8%;
+        background-color: rgb(210, 192, 30);
+    }
+}

@@ -1,0 +1,38 @@
+.container_h{
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    gap: 20vh;
+    background-color: tomato;
+    justify-content: space-around;
+
+}
+
+.container_v {
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center; 
+    justify-content: space-around;
+    background-color: rgb(255, 197, 71);  
+    gap: 10vh;
+    height: 50vh;
+    width: 50vw;
+   
+
+}
+
+.mini{
+    background-color: bisque;
+        border: solid black 4px;
+        padding: 3vh;
+}
+
+.mini2{
+        background-color: rgb(196, 255, 255);
+            border: solid black 4px;
+            padding: 3vh;
+    
+}

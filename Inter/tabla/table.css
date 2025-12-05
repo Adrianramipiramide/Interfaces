@@ -1,0 +1,39 @@
+.circulo1{
+    height: 50vh;
+    width: 50vw;
+    background-color: aliceblue;
+    border-radius: 20%;
+    
+}
+
+.circulo2{
+
+
+}
+
+.circulo3{
+height: 50vh;
+    width: 50vh;
+    padding: 5%;
+ border-radius: 80%;
+background-color: blue;
+align-items: center;
+}
+
+.circulo32{
+    align-items: center;
+height: 30vh;
+    width: 30vh;
+    padding : 10vh;
+border-radius: 70%;
+background-color: lightcoral;
+
+}
+
+.cuadrado{
+    height: 60%;
+     width: 60%;
+     padding: 20%;
+background-color: lightgreen;
+align-items: center;
+}
