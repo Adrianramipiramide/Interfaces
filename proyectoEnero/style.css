@@ -127,6 +127,11 @@ a {
     grid-row-start: 0;
     grid-row-end: 1;
     border: solid lightsalmon 2px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 3%;
 }
 .container2 {
         grid-row-start: 1;
@@ -140,6 +145,6 @@ a {
 }
 
 .icono{
-    width: 2%;
-    height: 2%;
+    width: 3vh;
+    height: 3vh;
 }
