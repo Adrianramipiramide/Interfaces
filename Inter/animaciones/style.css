@@ -12,7 +12,8 @@
             slide-in 5s forwards,
             slide-out 5s forwards 5s,
             slide-put 5s forwards 10s,
-            slide-center 5s forwards 15s;
+            slide-center 5s forwards 15s,
+            color 3s forwards 20s;
 }
 /* ANIMACIÓN 1: slide-in */
 @keyframes slide-in { 
@@ -54,6 +55,7 @@
         width: 5%;
         background-color: rgb(36, 210, 30);
     }
+
 }
 
 /* ANIMACIÓN 3: slide-put */
@@ -84,4 +86,23 @@
         width: 5%;
         background-color: rgb(30, 210, 126);
     }
+
+
+}
+
+
+@keyframes color{
+
+    from {
+        transform: translate(50vw, 40vh); /* centro aproximado */
+        width: 5%;
+        background-color: rgb(30, 210, 126);  
+    }
+
+    to{
+        height: 5%;
+        width: 5%;
+        background-color: violet;
+    }
+
 }
