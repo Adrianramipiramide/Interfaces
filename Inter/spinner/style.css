@@ -1,0 +1,121 @@
+.container{
+    width: 95vw;
+    height: 95vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3%;
+}
+
+.spinner {
+    border: 4px solid rgba(0, 0, 0, 0.2);
+    border-left-color: hsla(190,
+        77%,
+        88%, 1);
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+
+    animation: girar 1s linear infinite;
+}
+
+.spinner2 {
+    border: 4px solid rgba(0, 0, 0, 0.2);
+    border-left-color: hsla(190,
+        76%,
+        82%, 0.9);
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+
+    animation: reves 1s linear infinite;
+}
+
+.spinner3 {
+    border: 4px solid rgba(0, 0, 0, 0.2);
+    border-left-color: hsla(189,
+        75%,
+        75%, 0.8);
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+
+    animation: girar 1s linear infinite;
+}
+.spinner4 {
+    border: 4px solid rgba(0, 0, 0, 0.2);
+    border-left-color: hsla(190,
+        74%,
+        59%, 0.9);
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+
+    animation: girar 0.5s linear infinite;
+}
+.spinner5 {
+    border: 4px solid rgba(0, 0, 0, 0.2);
+    border-left-color: hsla(190,
+        100%,
+        42%, 0.9);
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+
+    animation: girar 8s linear infinite;
+}
+.spinner6 {
+border: 4px solid rgba(0, 0, 0, 0.2);
+    border-left-color: hsla(195,
+        100%,
+        39%, 0.9);
+    border-radius: 50%;
+    width: 36px;    
+    height: 36px;
+
+    animation: girar 0.5s linear infinite;
+}
+.spinner7 {
+    border: 4px solid rgba(0, 0, 0, 0.2);
+    border-left-color: hsla(201,
+        100%,
+        36%, 0.9);
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+
+    animation: girar 3s linear infinite;
+}
+.spinner8 {
+    border: 4px solid rgba(0, 0, 0, 0.2);
+    border-left-color: hsla(214,
+        97%,
+        27%, 0.9);
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+
+    animation: reves 1s linear infinite;
+}
+
+@keyframes girar {
+
+    from{
+        transform: rotate(360deg);
+    }
+
+}
+
+@keyframes reves{
+    from{
+        transform: rotate(-360deg);
+    }
+
+    to{
+
+        border-left-color: hsla(214,
+                    97%,
+                    27%, 0.9);
+    }
+}
