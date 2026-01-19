@@ -6,7 +6,7 @@
     --text-dark: #f8fafc;
     --primary: #6366f1;
     font-family: 'Times New Roman', Times, serif;
-    --img-fondo: url('img/abstract_background_inverted.png');
+    --img-fondo: linear-gradient(300deg, var(--bg-dark) 0%, var(--bg-light) 70%);
 
 }
 
@@ -20,11 +20,16 @@ body {
     background: var(--bg-light);
     color: var(--text-light);
     transition: background 0.3s, color 0.3s;
+    background: var(--img-fondo);
 }
 
 /* Modo oscuro */
 #theme-toggle:checked~.app {
-    background: var(--bg-dark);
+    background: linear-gradient(20deg, var(--bg-dark) 40%, var(--bg-light) 100%);
+
+
+
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#210643", endColorstr="#F6F5F4", GradientType=1);
     --img-fondo: url(img/fondo\ abstracto.png);
     color: var(--text-dark);
 }
@@ -136,8 +141,10 @@ a {
     grid-column-start: 1;
     grid-column-end: 4;
     border: solid lightsalmon 2px;
+    box-shadow: inset 0 0 5px lightsalmon, 0 0 10px lightsalmon;
     min-height: 0;
     min-width: 0;
+
 
 }
 
@@ -146,9 +153,42 @@ a {
     grid-row-end: 3;
     grid-column-start: 1;
     grid-column-end: 4;
-    border: solid lightsalmon 2px;
+
     min-height: 0;
     min-width: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+
+
+}
+
+.noticia {
+    display: flex;
+    flex-direction: column;
+    border: solid rgb(255, 255, 0) 5px;
+    border-radius: 5%;
+
+    box-shadow: inset 0 0 2.5px yellow, 0 0 5px yellow;
+
+    align-items: center;
+    text-align: center;
+    transition: transform 0.5s ease;
+
+}
+
+.fotonNoticia {
+    max-width: 200px;
+    height: auto;
+    border-radius: 5%;
+}
+
+.noticia:hover {
+    transform: scale(1.15);
+    border: tr;
+
+
 }
 
 .container3 {
@@ -278,7 +318,7 @@ a {
     width: 50vw;
     border-right: solid #6366f1 3px;
     padding: 2%;
-    background-image: var(--img-fondo);
+
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
