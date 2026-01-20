@@ -1,0 +1,44 @@
+/* Modo oscuro */
+#theme-toggle:checked~.app {
+    background: linear-gradient(20deg, var(--bg-dark) 40%, var(--bg-light) 100%);
+
+
+
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#210643", endColorstr="#F6F5F4", GradientType=1);
+    --img-fondo: url(img/fondo\ abstracto.png);
+    color: var(--text-dark);
+}
+
+#theme-toggle:checked~.app .header {
+    background: rgba(15, 23, 42, 0.85);
+}
+
+/* Botón tema */
+.theme-btn {
+    width: 42px;
+    height: 42px;
+    border: 2px solid var(--primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+
+}
+
+.theme-btn:hover {
+    background: var(--primary);
+    transform: scale(1.1);
+}
+
+/* Iconos */
+
+
+#theme-toggle:checked~.app .moon {
+    display: none;
+
+}
+
+#theme-toggle:checked~.app .sun {
+    display: inline;
+}
